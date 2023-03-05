@@ -1,0 +1,14 @@
+{
+  "$schema": "https://raw.githubusercontent.com/samhuk/exhibitor/master/src/common/config/schema.json",
+  "site": {
+    "title": "Exhibitor Demo"
+  },
+  "watch": [
+    "./src/**/*"
+  ],
+  "include": [
+    "./src/**/*.exh.ts",
+    "./src/**/*.exh.tsx"
+  ],
+  "verbose": true
+}

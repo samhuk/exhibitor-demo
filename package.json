@@ -1,0 +1,39 @@
+{
+  "name": "exhibitor-demo",
+  "version": "1.0.0",
+  "description": "Demo for Exhibitor",
+  "scripts": {
+    "start": "exhibitor start",
+    "demo": "exhibitor demo"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/samhuk/exhibitor-demo.git"
+  },
+  "keywords": [
+    "exhibitor",
+    "demo",
+    "react",
+    "component",
+    "workshop"
+  ],
+  "author": {
+    "email": "samhughes1701@hotmail.co.uk",
+    "name": "Sam Hughes",
+    "url": "https://samhuk.com/about"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/samhuk/exhibitor-demo/issues"
+  },
+  "homepage": "https://github.com/samhuk/exhibitor-demo#readme",
+  "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.11",
+    "exhibitor": "^2.2.6",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
