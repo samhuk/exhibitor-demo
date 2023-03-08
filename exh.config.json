@@ -10,5 +10,9 @@
     "./src/**/*.exh.ts",
     "./src/**/*.exh.tsx"
   ],
-  "verbose": true
+  "verbose": true,
+  "demo": {
+    "enableHttps": true,
+    "httpsDomains": ["demo.exhibitor.dev"]
+  }
 }
