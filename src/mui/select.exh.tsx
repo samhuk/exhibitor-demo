@@ -6,7 +6,7 @@ import FormControl from '@mui/material/FormControl'
 import { ThemeProvider } from '@emotion/react'
 import { Box, CssBaseline } from '@mui/material'
 
-import exhibit from 'exhibitor'
+import exhibit, { PropModifierType } from 'exhibitor'
 
 import { darkTheme } from './theme'
 
@@ -55,4 +55,19 @@ exhibit(component, 'select')
     ...p,
     variant: 'outlined',
   }))
+  .propModifiers([
+    {
+      label: 'Variant',
+      type: PropModifierType.SELECT,
+      options: ['standard', 'outlined', 'filled'],
+      init: props => props.variant,
+      apply: (newVariant, currentProps) => ({ ...currentProps, variant: newVariant as 'standard' | 'outlined' | 'filled'}),
+    },
+    {
+      label: 'Label',
+      type: PropModifierType.TEXT_INPUT,
+      init: props => props.label,
+      apply: (newLabel, currentProps) => ({ ...currentProps, label: newLabel }),
+    },
+  ])
   .build()
